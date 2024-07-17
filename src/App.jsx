@@ -1,13 +1,22 @@
-const App=()=> {
-  const [count, setCount] = useState(0)
-
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Highlights from "./components/Highlights";
+import Footer from "./components/Footer";
+import Features from "./components/Features";
+import HowItWorks from "./components/HowItWorks";
+import Model from "./components/Model";
+const App = () => {
   return (
-    <>
-     <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-    </>
-  )
-}
+    <main className="bg-black">
+      <Navbar />
+      <Hero />
+      <Highlights />
+      <Features />
+      <Model />
+      <HowItWorks />
+      <Footer />
+    </main>
+  );
+};
 
-export default App
+export default App;
